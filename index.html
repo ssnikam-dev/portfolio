@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="Portfolio of Sushant Nikam — Java Backend Developer building reliable backend applications with Spring Boot, PostgreSQL and AI integrations.">
+  <title>Sushant Nikam | Java Backend Developer</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Sushant Nikam home"><span class="brand-mark">SN</span><span>Sushant Nikam<span class="brand-subtitle">JAVA BACKEND DEVELOPER</span></span></a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+      <div class="nav-links" id="navLinks">
+        <a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#about">About</a>
+        <a class="nav-contact" href="#contact">Contact ↗</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero section container" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span> OPEN TO THE RIGHT OPPORTUNITY</div>
+        <h1>Building reliable<br><span class="gradient-text">backend systems.</span></h1>
+        <p class="hero-lede">I'm <strong>Sushant Nikam</strong>, a Java Backend Developer focused on Spring Boot, REST APIs, databases, and practical AI integrations.</p>
+        <p class="hero-note">I enjoy turning complex requirements into maintainable software—and making it reliable beyond my local machine.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore my work <span>↘</span></a>
+          <a class="button button-secondary" href="assets/resume.pdf" target="_blank" rel="noreferrer">View resume ↗</a>
+        </div>
+        <div class="social-row">
+          <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" rel="noreferrer">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/YOUR_LINKEDIN_USERNAME/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+          <a href="mailto:YOUR_EMAIL@example.com">Email ↗</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-label="Backend developer technology illustration">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="code-window">
+          <div class="window-top"><span></span><span></span><span></span><small>Application.java</small></div>
+          <pre><code><span class="code-purple">@SpringBootApplication</span>
+<span class="code-blue">public class</span> Application {
+
+  <span class="code-purple">public static void</span> main(
+      String[] args) {
+    SpringApplication.run(
+      Application.class, args);
+  }
+}</code></pre>
+          <div class="code-footer"><span class="pulse"></span> Building · Testing · Shipping</div>
+        </div>
+        <div class="floating-chip chip-java"><b>☕</b> Java</div>
+        <div class="floating-chip chip-db"><b>◈</b> PostgreSQL</div>
+        <div class="floating-chip chip-ai"><b>✳</b> AI Integration</div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div class="container trust-inner"><span>CORE TOOLKIT</span><div>Java</div><i></i><div>Spring Boot</div><i></i><div>REST APIs</div><i></i><div>PostgreSQL</div><i></i><div>Docker</div><i></i><div>AI Integration</div></div>
+    </section>
+
+    <section class="section container" id="projects">
+      <div class="section-heading"><div><p class="eyebrow">SELECTED WORK</p><h2>Projects that solve<br>real problems<span class="accent">.</span></h2></div><p class="section-intro">A selection of applications I've built and improved. Explore the code, architecture, and live demos.</p></div>
+      <div class="project-grid" id="projectGrid"></div>
+      <p class="edit-hint">Tip: edit <code>data.js</code> to add, remove, or update project cards—no framework or build step required.</p>
+    </section>
+
+    <section class="section section-muted" id="skills">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow">TECHNICAL TOOLKIT</p><h2>Tools I work with<span class="accent">.</span></h2></div><p class="section-intro">Keep this list honest and focused on technologies you can confidently discuss in an interview.</p></div>
+        <div class="skills-grid" id="skillsGrid"></div>
+      </div>
+    </section>
+
+    <section class="section container" id="experience">
+      <div class="section-heading"><div><p class="eyebrow">CAREER JOURNEY</p><h2>Experience<span class="accent">.</span></h2></div><p class="section-intro">Highlight your responsibilities, technical decisions, and measurable outcomes—not just your job title.</p></div>
+      <div class="timeline" id="experienceList"></div>
+    </section>
+
+    <section class="section section-muted" id="education">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow">FOUNDATIONS</p><h2>Education & learning<span class="accent">.</span></h2></div><p class="section-intro">Add your degree, institution, graduation year, and relevant certifications or courses.</p></div>
+        <div class="education-grid" id="educationList"></div>
+      </div>
+    </section>
+
+    <section class="section container" id="about">
+      <div class="about-layout"><div><p class="eyebrow">A LITTLE ABOUT ME</p><h2>Curious by nature.<br><span class="gradient-text">Practical by design.</span></h2></div><div class="about-copy"><p id="aboutText"></p><div class="about-pills" id="interestsList"></div></div></div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-card"><div><p class="eyebrow">HAVE A ROLE OR PROJECT IN MIND?</p><h2>Let's build something<br>meaningful<span class="accent">.</span></h2><p>I'm happy to discuss backend engineering opportunities, projects, and ideas.</p></div><div class="contact-actions"><a class="button button-primary" id="contactEmail" href="mailto:YOUR_EMAIL@example.com">Get in touch ↗</a><a class="button button-secondary" href="https://www.linkedin.com/in/YOUR_LINKEDIN_USERNAME/" id="contactLinkedIn" target="_blank" rel="noreferrer">Connect on LinkedIn ↗</a></div></div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container footer-inner"><span>© <span id="year"></span> Sushant Nikam</span><span>Designed for clarity. Built with HTML, CSS & JavaScript.</span><a href="#home">Back to top ↑</a></div></footer>
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
