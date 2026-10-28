@@ -71,3 +71,7 @@ Use an empty string for a link you don't have yet. Update the existing sample pr
 ## License
 
 You may adapt this template for your personal portfolio. Add your preferred license if you plan to redistribute it.
+
+## Visual effects
+
+`effects.js` + the bottom of `styles.css` add the developer-style motion (typed hero code, scroll reveals, animated timeline, scroll-spy nav, drifting code-glyph background, card spotlight/tilt). They never touch your content in `data.js`. All motion is disabled automatically for visitors who prefer reduced motion. To remove everything, delete `effects.js` and its `<script>` tag.

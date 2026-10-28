@@ -8,8 +8,8 @@
     : `<span class="disabled" title="Add your real URL in data.js">${label} · add link</span>`;
   const tags = (items) => (items || []).map(item => `<span class="tag">${safe(item)}</span>`).join("");
 
-  document.querySelector(".brand").innerHTML = `<span class="brand-mark">SN</span><span>${safe(profile.name || "Your Name")}<span class="brand-subtitle">JAVA BACKEND DEVELOPER</span></span>`;
-  document.querySelector(".hero-lede").innerHTML = `I'm <strong>${safe(profile.name || "Your Name")}</strong>, a Java Backend Developer focused on Spring Boot, REST APIs, databases, and practical AI integrations.`;
+  document.querySelector(".brand").innerHTML = `<span class="brand-mark">SN</span><span>${safe(profile.name || "Your Name")}<span class="brand-subtitle">Java Full Stack DEVELOPER</span></span>`;
+  document.querySelector(".hero-lede").innerHTML = `I'm <strong>${safe(profile.name || "Your Name")}</strong>, a Java Full Stack Developer focused on Spring Boot, Microservices, React/Angular, REST APIs, databases, cloud and practical AI integrations.`;
   document.querySelector(".social-row").innerHTML = `${link(profile.github, "GitHub ↗")}${link(profile.linkedin, "LinkedIn ↗")}${isRealUrl("mailto:" + safe(profile.email)) ? `<a href="mailto:${safe(profile.email)}">Email ↗</a>` : `<span class="disabled">Add email in data.js</span>`}`;
   const resumeLink = document.querySelector('.hero-actions a[href="assets/resume.pdf"]');
   if (profile.resume) resumeLink.href = profile.resume;
@@ -25,8 +25,32 @@
     </article>`).join("");
   document.getElementById("skillsGrid").innerHTML = (data.skills || []).map(group => `
     <article class="skill-group"><h3>${safe(group.title)}</h3><div class="tag-list">${tags(group.items)}</div></article>`).join("");
-  document.getElementById("experienceList").innerHTML = (data.experience || []).map(item => `
-    <article class="timeline-item"><div><h3>${safe(item.role)}</h3><div class="timeline-company">${safe(item.company)}</div><p>${safe(item.description)}</p></div><div class="timeline-date">${safe(item.dates)}</div></article>`).join("");
+ 
+document.getElementById("experienceList").innerHTML =
+  (data.experience || []).map(item => {
+    const description = Array.isArray(item.description)
+      ? item.description
+      : String(item.description || "")
+          .split(/\n+/)
+          .map(point => point.trim())
+          .filter(Boolean);
+
+    return `
+      <article class="timeline-item">
+        <div>
+          <h3>${safe(item.role)}</h3>
+          <div class="timeline-company">${safe(item.company)}</div>
+          <ul class="experience-points">
+            ${description.map(point =>
+              `<li>${safe(point)}</li>`
+            ).join("")}
+          </ul>
+        </div>
+        <div class="timeline-date">${safe(item.dates)}</div>
+      </article>
+    `;
+  }).join("");
+
   document.getElementById("educationList").innerHTML = (data.education || []).map(item => `
     <article class="education-card"><div class="edu-label">${safe(item.label || "Education")}</div><h3>${safe(item.qualification)}</h3><p><strong>${safe(item.institution)}</strong><br>${safe(item.details)}</p></article>`).join("");
   document.getElementById("aboutText").textContent = profile.about || "";
