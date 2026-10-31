@@ -43,7 +43,7 @@ window.PORTFOLIO_DATA = {
     "Kubernetes"
   ],
       github: "https://github.com/food-delivery-app-org/food-delivery-app",
-      demo: "",
+      demo: "https://food-swift-seven.vercel.app/restaurant-listing",
       caseStudy: ""
     },
    { title: "ReactiveBill", category: "Reactive REST API | Spring WebFlux + R2DBC",
