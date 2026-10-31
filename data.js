@@ -19,7 +19,7 @@ window.PORTFOLIO_DATA = {
     {
       title: "Kartly",
       category: "Scalable E-Commerce React+Microservices",
-      status: "In development",
+      status: "Completed",
       icon: "⌘",
       description: "A modern multi-role e-commerce platform: shop as a customer, sell and fulfil as a seller, and configure the whole marketplace as an admin.",
       tech: ["Java", "Spring Boot", "React", "Microservices", "PostgreSQL","AWS S3","Kafka"],
@@ -30,7 +30,7 @@ window.PORTFOLIO_DATA = {
     {
       title: "FoodSwift",
       category: "Cloud-Native Food Delivery | Angular + Microservices",
-      status: "In development",
+      status: "Completed",
       icon: "◖",
       description: "A cloud-native food delivery platform featuring user authentication, restaurant listings, menu management, cart functionality, order placement, and order tracking, built with Angular and Java microservices and deployed on Kubernetes",
       tech: [
