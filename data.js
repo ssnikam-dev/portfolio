@@ -42,7 +42,7 @@ window.PORTFOLIO_DATA = {
     "Docker",
     "Kubernetes"
   ],
-      github: "https://github.com/food-delivery-app-org/food-delivery-app",
+      github: "https://github.com/ssnikam-dev/FoodSwift",
       demo: "https://food-swift-seven.vercel.app/restaurant-listing",
       caseStudy: ""
     },
@@ -50,7 +50,7 @@ window.PORTFOLIO_DATA = {
      status: "Completed",
       icon: "↻", description: "A non-blocking invoice management REST API built with Spring WebFlux, Project Reactor, and Spring Data R2DBC. Features reactive CRUD operations, invoice lifecycle management, status-based summaries, and comprehensive reactive testing.",
        tech: [ "Java 17", "Spring Boot 3.3", "Spring WebFlux", "Project Reactor", "Spring Data R2DBC", "PostgreSQL", "Gradle", "Docker Compose", "JUnit 5", "Mockito", "StepVerifier", "WebTestClient" ],
-        github: "https://github.com/sushan2040/reactive-billing-api",
+        github: "https://github.com/ssnikam-dev/ReactiveBill",
          demo: "https://reactivebill.onrender.com/swagger-ui.html",
           caseStudy: "" }
   ],
