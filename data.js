@@ -51,7 +51,7 @@ window.PORTFOLIO_DATA = {
       icon: "↻", description: "A non-blocking invoice management REST API built with Spring WebFlux, Project Reactor, and Spring Data R2DBC. Features reactive CRUD operations, invoice lifecycle management, status-based summaries, and comprehensive reactive testing.",
        tech: [ "Java 17", "Spring Boot 3.3", "Spring WebFlux", "Project Reactor", "Spring Data R2DBC", "PostgreSQL", "Gradle", "Docker Compose", "JUnit 5", "Mockito", "StepVerifier", "WebTestClient" ],
         github: "https://github.com/sushan2040/reactive-billing-api",
-         demo: "",
+         demo: "https://reactivebill.onrender.com/swagger-ui.html",
           caseStudy: "" }
   ],
   skills: [
